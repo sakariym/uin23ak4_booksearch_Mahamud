@@ -49,13 +49,6 @@ const SearchResults = () => {
           {books.map((book) => (
             <div className="book-card" key={book.key || book.id}>
               <BookCard book={book} />
-              <a
-                href={`https://www.amazon.com/s?k=${book.amazon_id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Search on Amazon
-              </a>
             </div>
           ))}
         </div>
